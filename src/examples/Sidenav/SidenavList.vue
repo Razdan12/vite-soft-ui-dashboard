@@ -27,19 +27,13 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse nav-text="Virtual Reality" :to="{ name: 'Virtual Reality' }">
+        <sidenav-collapse nav-text="User" :to="{ name: 'Kelola User' }">
           <template #icon>
-            <icon name="virtual-reality" />
+            <icon name="people" />
           </template>
         </sidenav-collapse>
       </li>
-      <li class="nav-item">
-        <sidenav-collapse nav-text="RTL" :to="{ name: 'Rtl' }">
-          <template #icon>
-            <icon name="rtl-page" />
-          </template>
-        </sidenav-collapse>
-      </li>
+      
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
@@ -81,14 +75,14 @@
 <script>
 import Icon from "@/components/Icon.vue";
 import SidenavCollapse from "./SidenavCollapse.vue";
-// import SidenavCard from "./SidenavCard.vue";
+import SidenavCard from "./SidenavCard.vue";
 
 export default {
   name: "SidenavList",
   components: {
     Icon,
     SidenavCollapse,
-    // SidenavCard,
+    SidenavCard,
   },
   props: {
     cardBg: {
@@ -98,7 +92,7 @@ export default {
   },
   data() {
     return {
-      title: "Vite Soft UI Dashboard",
+      title: "PPDB",
       controls: "dashboardsExamples",
       isActive: "active",
     };
